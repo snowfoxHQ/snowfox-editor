@@ -30,6 +30,9 @@ git clone https://github.com/snowfoxHQ/snowfox-editor.git
 snowfox-editor/
 ├── SKILL.md                           主文件（13 节，触发词与规则都在这）
 ├── QC-REPORT.md                       质检报告（100 项断言实跑记录）
+├── CHANGELOG.md                       变更记录（发版时整段复制到 SkillHub 变更说明）
+├── LICENSE.md                          Apache-2.0 全文
+├── NOTICE.md                          归属声明
 ├── references/
 │   ├── troubleshooting.md             排障手册：每条报错的原因 + 改法 + 代码
 │   ├── typography-and-color.md        字号/配色/边框判据与理由
