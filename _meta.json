@@ -2,5 +2,7 @@
   "ownerId": "790197",
   "publishedAt": 1791884943581,
   "slug": "snowfox-editor",
-  "version": "2.5.0"
+  "version": "2.5.0",
+  "license": "MIT",
+  "repository": "https://github.com/snowfoxHQ/snowfox-editor"
 }

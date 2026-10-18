@@ -1,12 +1,18 @@
 # Snowfox编辑 · 公众号排版技能
 
 > 微信公众号正文排版与编辑技能包 v2.5.0 · 作者 SnowFox
+>
+> **GitHub**：https://github.com/snowfoxHQ/snowfox-editor · **License**：MIT
 
 ## 一句话
 
 本号只有**一套样式（悬浮卡片）**，板块数按字数自动算，必留区块按账号配置——不预设、不拆分、不硬套。
 
 ## 怎么装
+
+```bash
+git clone https://github.com/snowfoxHQ/snowfox-editor.git
+```
 
 把整个 `snowfox-editor` 文件夹放进：
 
