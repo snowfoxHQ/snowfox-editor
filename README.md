@@ -2,7 +2,7 @@
 
 > 微信公众号正文排版与编辑技能包 v2.5.0 · 作者 SnowFox
 >
-> **GitHub**：https://github.com/snowfoxHQ/snowfox-editor · **License**：MIT
+> **GitHub**：https://github.com/snowfoxHQ/snowfox-editor · **License**：Apache-2.0
 
 ## 一句话
 
@@ -170,6 +170,17 @@ python test/ab_compare.py           # A/B 增益（应 ≥20%）
 python test/stability.py            # 判分器防 flaky + 黄金集回归
 python test/stability.py --candidates <候选稿目录>   # best-of-N 分布（均值/σ/最好）
 ```
+
+## 许可
+
+**Apache-2.0**（见 `LICENSE` 与 `NOTICE`）。
+
+- 本技能包**首发于腾讯 SkillHub**（2026-10-13，见 `_meta.json` 的 `publishedAt`），
+  GitHub 仓库是同一份代码，**两边协议一致**。
+- **v2.5.0 起为 Apache-2.0**；SkillHub 上在此之前的版本仍按当时声明的协议使用
+  （开源许可一旦授予不可撤销，旧版本不会追溯改协议）。
+- Apache-2.0 **不授予商标/名义使用权**：`SnowFox` / `Snowfox编辑` 的名称与标识不在许可范围内。
+- 协议管的是**代码**，用它排出来的公众号文章不受任何约束。
 
 ## 环境要求
 
