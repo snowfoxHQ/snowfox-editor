@@ -23,7 +23,7 @@
 ```
 snowfox-editor/
 ├── SKILL.md                           主文件（13 节，触发词与规则都在这）
-├── QC-REPORT.md                       质检报告（87 项断言实跑记录）
+├── QC-REPORT.md                       质检报告（100 项断言实跑记录）
 ├── references/
 │   ├── troubleshooting.md             排障手册：每条报错的原因 + 改法 + 代码
 │   ├── typography-and-color.md        字号/配色/边框判据与理由
