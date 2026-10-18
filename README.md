@@ -173,7 +173,10 @@ python test/stability.py --candidates <候选稿目录>   # best-of-N 分布（�
 
 ## 许可
 
-**Apache-2.0**（见 `LICENSE` 与 `NOTICE`）。
+**Apache-2.0**（见 `LICENSE.md` 与 `NOTICE.md`）。
+
+> 文件名带 `.md` 后缀是因为分发平台（SkillHub）只接受带扩展名的文件；
+> 正文是 Apache-2.0 官方全文，**未做任何删改**。
 
 - 本技能包**首发于腾讯 SkillHub**（2026-10-13，见 `_meta.json` 的 `publishedAt`），
   GitHub 仓库是同一份代码，**两边协议一致**。
