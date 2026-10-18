@@ -1,0 +1,72 @@
+{
+  "_说明": "必留区块配置。每个用户的使用环境不同，必留的区块也不同——改这个文件即可，不用动SKILL.md 和模板。",
+  "_怎么改": [
+    "1. required 数组里增删区块 key，就是调整「每篇必留哪些」",
+    "2. 数组顺序 = 必留区块的顺序（检查器按此校验先后）",
+    "3. order_locked=false 时不校验先后，只校验存在",
+    "4. 改完跑 python scripts/fixed_blocks_check.py 看是否生效"
+  ],
+
+  "required": ["board", "masthead", "lede", "subtitle", "ai_chat"],
+  "order_locked": true,
+
+  "blocks": {
+    "board": {
+      "name": "底板",
+      "desc": "全篇最外层容器 #F2F3F5",
+      "always": true,
+      "note": "几乎所有人都要——除非只发单卡片段"
+    },
+    "masthead": {
+      "name": "报头",
+      "desc": "2px绿边 · 居中 · 含 by SnowFox 署名",
+      "always": true
+    },
+    "lede": {
+      "name": "导语",
+      "desc": "浅蓝底 · ⛔ 蓝色正文 #2B77BF",
+      "always": true
+    },
+    "subtitle": {
+      "name": "升华",
+      "desc": "绿底 #F0F9F2 · 18px 居中收尾",
+      "always": false,
+      "note": "不做升华收尾的号可从 required 里删掉"
+    },
+    "reminder": {
+      "name": "提醒卡",
+      "desc": "红底 #FDF3F2 · 1px 边",
+      "always": false,
+      "note": "要求每篇都有重点提醒的，加进 required"
+    },
+    "deep_dive": {
+      "name": "文末①最值得深挖",
+      "desc": "红底 + 2px 红边",
+      "always": false,
+      "note": "简报号通常必留；纯观点长文可删"
+    },
+    "interact": {
+      "name": "文末②互动问句",
+      "desc": "绿底 + 2px 绿边 · 居中",
+      "always": false
+    },
+    "repo": {
+      "name": "文末③开源仓库",
+      "desc": "绿底 + 2px 绿边 · 内链",
+      "always": false,
+      "note": "没有开源项目的号可删"
+    },
+    "ai_chat": {
+      "name": "文末④AI 对话引导",
+      "desc": "绿底 + 2px 绿边 · 全篇最后一块",
+      "always": true
+    }
+  },
+
+  "_常见配置示例": {
+    "资讯号（默认）": ["board", "masthead", "lede", "subtitle", "ai_chat"],
+    "简报号": ["board", "masthead", "lede", "reminder", "deep_dive", "interact", "repo", "ai_chat"],
+    "纯观点长文": ["board", "masthead", "lede", "subtitle", "ai_chat"],
+    "最小集（只发单卡）": ["ai_chat"]
+  }
+}

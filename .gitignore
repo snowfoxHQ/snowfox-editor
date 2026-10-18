@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+# --fix / handoff 产生的备份与临时产物
+*.bak
+*.wechat.html
+*.handoff.json
+test/_tmp_*
+test/_cand/
+.vscode/
+.DS_Store

@@ -1,0 +1,142 @@
+<!-- ============================================================================
+     Snowfox编辑 · 悬浮样式 · 弹性参照稿（板块数按字数自动伸缩）
+     ---------------------------------------------------------------------------
+     ⛔ 唯一一套样式：悬浮
+        border-radius:12px + box-shadow: 0 2px 10px rgba(31,45,61,0.08)
+                + border: 1px solid #E3E8EF（封面级用 2px 绿/红）
+
+     ⛔⛔ 板块数不是固定的，是按字数自动算出来的（同 px 自适应）：
+        每张卡片承载 120-200 字中文，先数字数，再决定放几张。
+
+     ===== 板块数计算公式 =====
+       卡片承载量 = 150 字/张（含标题与正文合计）
+       可重复卡片数 = 总字数 ÷ 150，取整，最少 2 张
+       → 600字 → 4 张 · 1000字 → 7 张 · 2000字 → 13 张 · 3000字 → 20 张
+
+     ===== 区块分两类 =====
+       【固定骨架】永远保留，不可删
+         底板 · 报头 · 导语 · 升华 · AI对话
+       【弹性内容】按算出的卡片数增删
+         胶囊栏目标 · 白卡（论述）· 绿卡（分层）· 红卡（金句）· 蓝卡（规格）· 提醒卡
+
+     ===== 红底配额（跟着字数走，不是固定值）=====
+       ≤1000 字 → 红底 2 处封顶
+       1000-2000 字 → 红底 3 处封顶
+       >2000 字 → 红底 4 处封顶
+       ⛔ 红底只给金句/提醒，每处都要是真强调，不是装饰
+
+     两种调用规则（⛔ 按用户意图选，不要问“你要哪套”）：
+       ①整套调用 —— 给整篇稿子 → 整篇复制本文，按公式增减卡片
+       ②分块调用 —— 只要某一张卡 → 从本文挑对应区块单独给，不必整篇
+
+     用法：整篇复制本文 → 按公式决定放几张卡 → 删掉多余的占位卡 → 改中文
+     ========================================================================= -->
+
+<!-- ###################### 固定骨架 ###################### -->
+
+<!-- 【固定】底板：全篇最外层容器。⛔ 唯一不加边框的底色 -->
+<section style="background: #F2F3F5;padding: 18px 12px;">
+
+  <!-- 【固定】报头：2px 绿边 = 封面级，含署名 -->
+  <!-- ⛔ 报头第一行 = 公众号名 + 分隔点 + 分类板块名，⛔ 不放文章标题（2026-10-13 定版） -->
+  <section style="background: #F0F9F2;border: 2px solid #09B83E;border-radius: 12px;box-shadow: 0 2px 10px rgba(31,45,61,0.08);padding: 24px 22px;text-align: center;margin-bottom: 16px;">
+    <p style="margin: 0 0 12px 0;font-size: 12px;color: #7C8798;letter-spacing: 2px;">独立印象馆 · 单篇深读</p>
+    <p style="margin: 0 0 12px 0;font-size: 20px;font-weight: 600;color: #046B27;line-height: 1.5;letter-spacing: 0.5px;">“标题简写，带中文双引号”</p>
+    <p style="margin: 0 0 12px 0;font-size: 13px;color: #7C8798;letter-spacing: 0.5px;">2026 年 10 月 13 日 · 周二</p>
+    <p style="margin: 0;font-size: 13px;color: #046B27;letter-spacing: 1px;">by SnowFox</p>
+  </section>
+
+  <!-- 【固定】导语：⛔ 蓝色正文，本号独有写法。⛔ 本块刻意无边框（底色本身已足够分隔） -->
+  <section style="background: #F4F8FC;border-radius: 12px;box-shadow: 0 2px 10px rgba(31,45,61,0.08);padding: 18px 20px;margin-bottom: 16px;">
+    <p style="margin: 0 0 10px 0;font-size: 14px;font-weight: 600;color: #2B77BF;letter-spacing: 0.5px;">导读</p>
+    <p style="margin: 0;font-size: 16px;line-height: 1.75;color: #2B77BF;letter-spacing: 0.5px;">用一段话交代全文核心判断，读者读完能复述出这句话。</p>
+  </section>
+
+  <!-- ###################### 弹性内容区 ###################### -->
+  <!-- ⛔ 下面的卡片按“字数 ÷ 150”增删。复制几张就多几张，删掉就少几张。
+       每 3-4 张卡配一个胶囊栏目标做分组；≤800 字的稿子可整组删掉胶囊。 -->
+
+  <!-- 【弹性】胶囊栏目标：每组 3-4 张卡配一个 -->
+  <section style="margin: 0 0 8px 0;">
+    <section style="display: inline-block;background: #FFFFFF;border: 1px solid #E3E8EF;border-radius: 20px;box-shadow: 0 2px 10px rgba(31,45,61,0.08);padding: 8px 20px;">
+      <p style="margin: 0;font-size: 15px;font-weight: 600;color: #046B27;letter-spacing: 1px;"><span style="color: #09B83E;">01</span> · 分组标题</p>
+    </section>
+  </section>
+
+  <!-- 【弹性】白卡：论述主体（最常用的一张） -->
+  <section style="background: #FFFFFF;border: 1px solid #E3E8EF;border-radius: 12px;box-shadow: 0 2px 10px rgba(31,45,61,0.08);padding: 18px 20px;margin-bottom: 16px;">
+    <p style="margin: 0 0 8px 0;font-size: 17px;font-weight: 600;color: #2B77BF;line-height: 1.6;letter-spacing: 0.5px;">小节标题</p>
+    <p style="margin: 0;font-size: 16px;line-height: 1.75;color: #3F3F3F;letter-spacing: 0.5px;">正文内容，关键处用<strong style="font-weight: 500;">中灰加粗</strong>标记。这里是占位示意文字，用于说明一张卡片的实际承载量约 120-200 字。真实使用时替换为具体论述、案例或数据支撑，不要保留这段说明。</p>
+  </section>
+
+  <!-- 【弹性】白卡：第二张（同上，复制即可） -->
+  <section style="background: #FFFFFF;border: 1px solid #E3E8EF;border-radius: 12px;box-shadow: 0 2px 10px rgba(31,45,61,0.08);padding: 18px 20px;margin-bottom: 16px;">
+    <p style="margin: 0 0 8px 0;font-size: 17px;font-weight: 600;color: #2B77BF;line-height: 1.6;letter-spacing: 0.5px;">小节标题</p>
+    <p style="margin: 0;font-size: 16px;line-height: 1.75;color: #3F3F3F;letter-spacing: 0.5px;">正文内容，关键处用<strong style="font-weight: 500;">中灰加粗</strong>标记。这里是占位示意文字，用于说明一张卡片的实际承载量约 120-200 字。真实使用时替换为具体论述、案例或数据支撑，不要保留这段说明。</p>
+  </section>
+
+  <!-- 【弹性】绿卡：分层说明（标题 + 一句话职能 + 具体说明） -->
+  <section style="margin-bottom: 16px;background: #F0F9F2;border: 1px solid #E3E8EF;border-left: 4px solid #09B83E;border-radius: 12px;box-shadow: 0 2px 10px rgba(31,45,61,0.08);padding: 18px 20px;">
+    <p style="margin: 0 0 8px 0;font-size: 16px;font-weight: 600;color: #046B27;letter-spacing: 0.5px;">层名称</p>
+    <p style="margin: 0 0 12px 0;font-size: 12px;color: #7C8798;letter-spacing: 0.5px;">一句话职能说明</p>
+    <p style="margin: 0;font-size: 16px;line-height: 1.75;color: #3F3F3F;letter-spacing: 0.5px;">正文内容，关键处用<strong style="font-weight: 500;">中灰加粗</strong>标记。这里是占位示意文字，用于说明一张卡片的实际承载量约 120-200 字。真实使用时替换为具体论述、案例或数据支撑，不要保留这段说明。</p>
+  </section>
+
+  <!-- 【弹性】蓝卡：规格 / 参数 / 数据（浅蓝底） -->
+  <section style="margin-bottom: 16px;background: #F4F8FC;border: 1px solid #E3E8EF;border-radius: 12px;box-shadow: 0 2px 10px rgba(31,45,61,0.08);padding: 18px 20px;">
+    <p style="margin: 0 0 8px 0;font-size: 16px;font-weight: 600;color: #2B77BF;letter-spacing: 0.5px;">规格项</p>
+    <p style="margin: 0;font-size: 14px;line-height: 1.75;color: #3F3F3F;letter-spacing: 0.5px;">参数、数据或对比结论。</p>
+  </section>
+
+  <!-- 【弹性】红卡：金句（⛔ 按红底配额用，用完就删） -->
+  <section style="margin-bottom: 16px;background: #FDF3F2;border: 1px solid #E3E8EF;border-left: 4px solid #D93F2B;padding: 18px 20px;border-radius: 12px;box-shadow: 0 2px 10px rgba(31,45,61,0.08);">
+    <p style="margin: 0;font-size: 16px;line-height: 1.75;color: #A8281A;letter-spacing: 0.5px;">把全文最有力的一句话放这里。</p>
+  </section>
+
+  <!-- 【弹性】第二个分组：字数够多就加，≤800 字可整组删掉 -->
+  <section style="margin: 0 0 8px 0;">
+    <section style="display: inline-block;background: #FFFFFF;border: 1px solid #E3E8EF;border-radius: 20px;box-shadow: 0 2px 10px rgba(31,45,61,0.08);padding: 8px 20px;">
+      <p style="margin: 0;font-size: 15px;font-weight: 600;color: #046B27;letter-spacing: 1px;"><span style="color: #09B83E;">02</span> · 第二组标题</p>
+    </section>
+  </section>
+
+  <!-- 【弹性】白卡 -->
+  <section style="background: #FFFFFF;border: 1px solid #E3E8EF;border-radius: 12px;box-shadow: 0 2px 10px rgba(31,45,61,0.08);padding: 18px 20px;margin-bottom: 16px;">
+    <p style="margin: 0 0 8px 0;font-size: 17px;font-weight: 600;color: #2B77BF;line-height: 1.6;letter-spacing: 0.5px;">小节标题</p>
+    <p style="margin: 0;font-size: 16px;line-height: 1.75;color: #3F3F3F;letter-spacing: 0.5px;">正文内容，关键处用<strong style="font-weight: 500;">中灰加粗</strong>标记。这里是占位示意文字，用于说明一张卡片的实际承载量约 120-200 字。真实使用时替换为具体论述、案例或数据支撑，不要保留这段说明。</p>
+  </section>
+
+  <!-- 【弹性】提醒卡：红底，按配额用（≤1000 字的稿子可删） -->
+  <section style="margin-bottom: 16px;background: #FDF3F2;border: 1px solid #E3E8EF;border-radius: 12px;box-shadow: 0 2px 10px rgba(31,45,61,0.08);padding: 16px 20px;">
+    <p style="margin: 0;font-size: 16px;line-height: 1.75;color: #A8281A;letter-spacing: 0.5px;"><strong style="font-weight: 500;">最值得注意：</strong>最容易误判的地方。</p>
+  </section>
+
+  <!-- ###################### 弹性内容区结束 ###################### -->
+
+  <!-- ###################### 固定文末 ###################### -->
+
+  <!-- 【固定】升华：绿底 18px 居中，文章收尾 -->
+  <section style="margin-bottom: 16px;background: #F0F9F2;border: 1px solid #E3E8EF;border-radius: 12px;box-shadow: 0 2px 10px rgba(31,45,61,0.08);padding: 22px 24px;text-align: center;">
+    <p style="margin: 0;font-size: 18px;line-height: 1.75;color: #046B27;letter-spacing: 0.5px;">收尾金句，<br/>独立成行居中。</p>
+  </section>
+
+  <!-- 【固定】事实来源：白底 1px 灰边 = 内容级。这是核对信息块，不是强调块 -->
+  <!-- ⛔ 2026-10-13 真实翻车：此块曾因只有底色没有 border 而被用户退回 -->
+  <section style="margin-bottom: 16px;background: #FFFFFF;border: 1px solid #E3E8EF;border-radius: 12px;box-shadow: 0 2px 10px rgba(31,45,61,0.08);padding: 18px 20px;">
+    <p style="margin: 0 0 8px 0;font-size: 14px;font-weight: 600;color: #2B77BF;letter-spacing: 0.5px;">事实来源</p>
+    <p style="margin: 0;font-size: 14px;line-height: 1.75;color: #3F3F3F;letter-spacing: 0.5px;">列出关键信息的出处与核对口径：媒体名、日期、原文链接，以及哪些数字是二手转述、哪些经过交叉验证。</p>
+  </section>
+
+  <!-- 【固定】开源仓库引流：⛔ 2px 绿边 = 封面级。真实翻车：曾因只有底色没有 border 被退回 -->
+  <section style="margin-bottom: 16px;background: #F0F9F2;border: 2px solid #09B83E;border-radius: 12px;box-shadow: 0 2px 10px rgba(31,45,61,0.08);padding: 20px 22px;">
+    <p style="margin: 0 0 8px 0;font-size: 17px;font-weight: 600;color: #046B27;letter-spacing: 1px;">作者GitHub开源仓库有好货</p>
+    <p style="margin: 0;font-size: 15px;line-height: 1.75;color: #3F3F3F;letter-spacing: 0.5px;"><a href="https://mp.weixin.qq.com/s/ARTICLE_ID" target="_blank" rel="noopener" style="color: #046B27;text-decoration: none;">N 个项目 · 开源许可 · 点此查看</a></p>
+  </section>
+
+  <!-- 【固定】AI 对话引导：2px 绿边，全篇最后一块，每篇必带 -->
+  <section style="background: #F0F9F2;border: 2px solid #09B83E;border-radius: 12px;box-shadow: 0 2px 10px rgba(31,45,61,0.08);padding: 20px 22px;">
+    <p style="margin: 0 0 8px 0;font-size: 17px;font-weight: 600;color: #046B27;letter-spacing: 1px;">💬 AI 对话已开通</p>
+    <p style="margin: 0;font-size: 15px;line-height: 1.75;color: #3F3F3F;letter-spacing: 0.5px;">本号已开通AI私信，可以讨论已发布文章和Harness规范内容！</p>
+  </section>
+
+</section>

@@ -1,0 +1,30 @@
+{
+  "version": "1.0",
+  "note": "B6 角色词表。strong=技能专用词（命中即判错）；weak=通用汉语（单独命中只提醒不判错）；fingerprint=视觉指纹（左侧 4px 色条，与用词无关）。改这个文件就能适配自己的用词习惯，不用改代码。缺失或损坏时脚本自动回退内置默认。",
+  "roles": [
+    {
+      "key": "quote",
+      "label": "金句/重点提醒",
+      "bg": "#FDF3F2",
+      "strong": ["核心金句"],
+      "weak": ["最值得注意", "注意："],
+      "fingerprint": "border-left: 4px solid #D93F2B"
+    },
+    {
+      "key": "layer",
+      "label": "升华/分层",
+      "bg": "#F0F9F2",
+      "strong": ["升华块", "层名称", "一句话职能", "收尾金句"],
+      "weak": [],
+      "fingerprint": "border-left: 4px solid #09B83E"
+    },
+    {
+      "key": "spec",
+      "label": "规格信息",
+      "bg": "#F4F8FC",
+      "strong": ["规格项", "参数说明"],
+      "weak": [],
+      "fingerprint": ""
+    }
+  ]
+}
