@@ -177,6 +177,7 @@ python test/stability.py --candidates <候选稿目录>   # best-of-N 分布（�
 
 - 本技能包**首发于腾讯 SkillHub**（2026-10-13，见 `_meta.json` 的 `publishedAt`），
   GitHub 仓库是同一份代码，**两边协议一致**。
+- 已核实 SkillHub 上传协议**无独家/独占授权条款**（2026-10-18）：与 GitHub 并行开源不存在冲突。
 - **v2.5.0 起为 Apache-2.0**；SkillHub 上在此之前的版本仍按当时声明的协议使用
   （开源许可一旦授予不可撤销，旧版本不会追溯改协议）。
 - Apache-2.0 **不授予商标/名义使用权**：`SnowFox` / `Snowfox编辑` 的名称与标识不在许可范围内。
