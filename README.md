@@ -2,7 +2,7 @@
 
 > 微信公众号正文排版与编辑技能包 v2.5.0 · 作者 SnowFox
 >
-> **GitHub**：https://github.com/snowfoxHQ/snowfox-editor · **License**：Apache-2.0
+> **SkillHub**：https://skillhub.cn/skills/indiv-snowfox/snowfox-editor · **GitHub**：https://github.com/snowfoxHQ/snowfox-editor · **License**：Apache-2.0
 
 ## 一句话
 

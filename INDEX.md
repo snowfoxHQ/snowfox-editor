@@ -2,6 +2,9 @@
 
 技能包 v2.5.0 · 全部文件都在这个文件夹里
 
+> 平台页：https://skillhub.cn/skills/indiv-snowfox/snowfox-editor
+> 仓库：https://github.com/snowfoxHQ/snowfox-editor
+
 ## 怎么装
 
 把 `snowfox-editor` 整个文件夹放进 `~/.workbuddy/skills/`（即 `snowfox-editor/` 与 `SKILL.md` 平级）。

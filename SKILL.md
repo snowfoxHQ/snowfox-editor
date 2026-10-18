@@ -15,6 +15,12 @@ agent_created: true
 
 # Snowfox编辑
 
+> **平台页（发布正本，装这个）**：https://skillhub.cn/skills/indiv-snowfox/snowfox-editor
+> **仓库（镜像，更新记录见 `CHANGELOG.md`）**：https://github.com/snowfoxHQ/snowfox-editor
+> **协议**：Apache-2.0（`LICENSE.md` / `NOTICE.md`）
+>
+> 以本文件为准发版：先发 SkillHub，再同步到 GitHub；两处内容不一致时，**SkillHub 那一版是正本**。
+
 公众号正文的排版执行标准。**排版在这里做，推草稿箱不在这里做**（发布类需求走 `wechat-oa-draft-publish`）。
 
 规范正本在资料库 → 个人空间 → `公众号运营规范/`：
