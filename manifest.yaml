@@ -1,0 +1,33 @@
+# SkillHub 上架清单（manifest.yaml）
+# SkillHub「绑定 GitHub 账号 → 选仓库导入」时读取本文件，上架表单「直接抄 manifest」。
+# homepage 字段即 SkillHub 项目页展示的 GitHub 仓库链接。
+# 更新版本时：version 需与 SKILL.md frontmatter 的 version 同步递增，先提交再打包。
+
+name: snowfox-editor
+slug: snowfox-editor
+version: 2.5.0
+description: "Snowfox编辑 —— 微信公众号排版唯一一套悬浮样式的全部版式、规范与自检工具。一份弹性参照稿（区块标注必留/弹性），板块数按字数自动算（字数÷150），必留区块由配置文件逐用户定制（fixed-blocks.json），支持整套调用与分块调用两种方式；含三色分工、字号行距参数、微信 HTML 合规约束、边框铁律、标点铁律、发布前八类确定性自检与一键自愈、封面处理。只负责排版，不负责推草稿箱与发布。"
+author: SnowFox
+category: content
+tags:
+  - 公众号排版
+  - 微信公众号
+  - 悬浮样式
+  - 内容创作
+  - 排版自检
+triggers:
+  - 排版
+  - 改排版
+  - 按公众号规范排
+  - 用悬浮样式
+  - 给我一张金句卡
+  - 检查排版
+  - 必留区块改成
+  - 配色
+  - 字号行距
+  - 封面裁图
+license: Apache-2.0
+# ↓↓↓ 这一行就是 SkillHub 项目页上显示的 GitHub 链接 ↓↓↓
+homepage: https://github.com/snowfoxHQ/snowfox-editor
+icon: icon.png
+permissions: "无需 API key；纯本地 Python 标准库自检，封面裁图需 Pillow"
