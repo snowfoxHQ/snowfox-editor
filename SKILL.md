@@ -23,9 +23,7 @@ agent_created: true
 
 公众号正文的排版执行标准。**排版在这里做，推草稿箱不在这里做**（发布类需求走 `wechat-oa-draft-publish`）。
 
-规范正本在资料库 → 个人空间 → `公众号运营规范/`：
-《公众号开发环境与排版规范》《公众号排版参数（落地方案）》《公众号排版组件库》。
-本技能是那三份正本的**可执行化**：把散文式规范变成可复制组件 + 可运行断言。
+本技能是作者公众号排版规范体系的**可执行化**：把散文式规范变成可复制组件 + 可运行断言。
 
 细则展开见 `@references/typography-and-color.md`（字号/配色/边框判据）与 `@references/writing-and-editing.md`（改写判例与病灶修法）。
 
@@ -493,7 +491,7 @@ Pillow 已装在 `C:/Users/admin/.workbuddy/binaries/python/envs/default`。
 | 需要推草稿箱 / 定时发布 | 先 `handoff.py --emit` 生成交接包（自检没过就 `ready=false`），再**转`wechat-oa-draft-publish`**；本技能不实现推送 |
 | 用户给的是 Markdown | 先按第三节选组件，再把 Markdown 内容填进对应 section |
 | 没有 Pillow | 封面处理无法自动完成，明确告知用户需手动裁图，**不要假装已处理** |
-| 规范与用户新要求冲突 | **以用户最新要求为准**，并同步更新本技能与资料库正本 |
+| 规范与用户新要求冲突 | **以用户最新要求为准**，并同步更新本技能 |
 
 **红线：**
 
@@ -531,5 +529,4 @@ Pillow 已装在 `C:/Users/admin/.workbuddy/binaries/python/envs/default`。
 python scripts/typeset_check.py --all && python test/run_all.py
 ```
 
-**正本位置**：资料库 → 个人空间 → `公众号运营规范/`（用户明确指认正本在资料库，本技能是工作副本）。
-正本更新后需同步本技能，并递增 `version`。
+样式或规范更新后需同步本技能，并递增 `version`。
