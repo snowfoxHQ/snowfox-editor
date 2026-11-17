@@ -5,7 +5,7 @@ display_name_en: Snowfox Editor
 description: "Snowfox编辑 —— 微信公众号排版唯一一套悬浮样式的全部版式、规范与自检工具。一份弹性参照稿（区块标注必留/弹性），板块数按字数自动算（字数÷150，同 px 自适应），必留区块由配置文件逐用户定制（fixed-blocks.json），支持整套调用与分块调用两种方式；含红绿蓝三色分工、字号行距参数、微信 HTML 合规约束、边框铁律、标点铁律、发布前八类确定性自检（带行号与修法）、一键自动修复、编码自适应、角色三值判定（显式标注/强词/视觉指纹/弱词只提醒）、交付契约与粘贴前净化、封面处理。当用户说「排版」「改排版」「按公众号规范排」「用悬浮样式」「悬浮样式排版」「给我一张金句卡」「加个分层说明」「这张卡换成悬浮的」「去掉阴影」「检查排版」「自动修一下」「必留区块改成 XX」「这段算金句吗」「配色」「字号行距」「封面裁图」「准备发布/交接」时激活。只管排版，不管推草稿箱与发布。"
 description_zh: "Snowfox编辑 —— 微信公众号排版唯一一套悬浮样式的全部版式、规范与自检工具。一份弹性参照稿（区块标注必留/弹性），板块数按字数自动算（字数÷150，同 px 自适应），必留区块由配置文件逐用户定制（fixed-blocks.json），支持整套调用与分块调用两种方式；含红绿蓝三色分工、字号行距参数、微信 HTML 合规约束、边框铁律、标点铁律、发布前八类确定性自检（带行号与修法）、一键自动修复、编码自适应、角色三值判定（显式标注/强词/视觉指纹/弱词只提醒）、交付契约与粘贴前净化、封面处理。当用户说「排版」「改排版」「按公众号规范排」「用悬浮样式」「悬浮样式排版」「给我一张金句卡」「加个分层说明」「这张卡换成悬浮的」「去掉阴影」「检查排版」「自动修一下」「必留区块改成 XX」「这段算金句吗」「配色」「字号行距」「封面裁图」「准备发布/交接」时激活。只管排版，不管推草稿箱与发布。"
 description_en: "Snowfox Editor - the single floating-card typesetting style for WeChat Official Account, with its layout library, rules and self-check tooling. One elastic reference template (blocks marked fixed / elastic), block count auto-computed from word count (words / 150, like responsive px), required blocks customised per user via a JSON config file, and two invocation modes (whole-template / single-block). Includes the three-colour role table, font-size and line-height parameters, WeChat HTML compliance constraints, the mandatory border rule, the punctuation rule, a deterministic eight-category pre-publish self-check (with line numbers and fix instructions), one-command auto-repair, encoding-tolerant file IO, three-level role detection (explicit annotation / strong keyword / visual fingerprint, with weak keywords only warned), a handoff contract plus paste-time cleanup, and cover image handling. Covers typesetting only - not draft-box push or publishing."
-version: 2.5.2
+version: 2.5.5
 author: SnowFox
 category: content
 allowed-tools: Read, Write, Edit, Bash
@@ -56,7 +56,7 @@ python scripts/fixed_blocks_check.py 稿件.html # 按配置校验
 | 行距 | **1.75**，全篇统一 |
 | 段间距 | 22px margin-bottom，**无首行缩进** |
 | 字间距 | 0.5px（干货）/ 1px（长文），上限 2px |
-| 两端边距 | 10px |
+| 两端边距 | 卡片内边距 18/20px（卡片自带）；**底板左右内边距 = 0，灰底铺满整行** |
 | 正文色 | `#3F3F3F`，禁用 `rgba(0,0,0,0.9)` |
 | 封面 | 900×383（2.35:1），JPEG q92 |
 

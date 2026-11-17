@@ -1,6 +1,6 @@
 {
   "asset": "snowfox-editor/scripts/typeset_check.py",
-  "version": "2.5.2",
+  "version": "2.5.5",
   "method": "先分类再写规则：这类数据（公众号正文 HTML）只有 8 种坏法，每种坏法配一条规则，而不是一个字段配一条规则",
   "bad_kinds": {
     "B1": "微信会剥离或禁用的写法残留（style 标签 / class / script / 行内事件属性）",
