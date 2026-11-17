@@ -1,6 +1,6 @@
 # Snowfox编辑 · 文件索引
 
-公众号排版技能包 v2.5.1 · 作者 SnowFox
+公众号排版技能包 v2.5.2 · 作者 SnowFox
 平台页：https://skillhub.cn/skills/indiv-snowfox/snowfox-editor · 仓库：https://github.com/snowfoxHQ/snowfox-editor
 
 ## 安装

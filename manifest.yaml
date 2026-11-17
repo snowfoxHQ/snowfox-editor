@@ -5,7 +5,7 @@
 
 name: snowfox-editor
 slug: snowfox-editor
-version: 2.5.1
+version: 2.5.2
 description: "Snowfox编辑 —— 微信公众号排版唯一一套悬浮样式的全部版式、规范与自检工具。一份弹性参照稿（区块标注必留/弹性），板块数按字数自动算（字数÷150），必留区块由配置文件逐用户定制（fixed-blocks.json），支持整套调用与分块调用两种方式；含三色分工、字号行距参数、微信 HTML 合规约束、边框铁律、标点铁律、发布前八类确定性自检与一键自愈、封面处理。只负责排版，不负责推草稿箱与发布。"
 author: SnowFox
 category: content
